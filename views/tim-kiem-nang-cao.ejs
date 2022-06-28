@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="theme-color" content="#000">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="hjJWD7Y7sJ2z9etlI3n6o3lomorsPasNWVUcmQp1">
+    <meta name="logged-in" content="0">
+    <meta property="fb:app_id" content="1864643850436909">
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=UA-234211342-1' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-N9N5L4J');</script>
+    <!-- End Google Tag Manager -->
+    <title>Lịch Sử</title>
+    <link rel="canonical" href="BookWeb.html">
+    <link rel="preconnect" href="https://www.google-analytics.com">
+    <link rel="shortcut icon" href="images/book_open_logo.png">
+    <link rel="preload" href="assets/fonts/OpenSans-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="preload" href="assets/fonts/OpenSans-SemiBold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+        integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/WebInterface.css">
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script type="text/javascript" async=""
+        src="https://www.googletagmanager.com/gtag/js?id=G-96XMLJKYVT&l=dataLayer&cx=c"></script>
+    <script src="https://raw.githubusercontent.com/verlok/vanilla-lazyload/master/src/lazyload.js"></script>
+    <script src="scripts/plugins.js"></script>
+    <style>
+        .tns-outer {
+            padding: 0 !important
+        }
+
+        .tns-outer [hidden] {
+            display: none !important
+        }
+
+        .tns-outer [aria-controls],
+        .tns-outer [data-action] {
+            cursor: pointer
+        }
+
+        .tns-slider {
+            transition: all 0s
+        }
+
+        .tns-slider>.tns-item {
+            box-sizing: border-box
+        }
+
+        .tns-horizontal.tns-subpixel {
+            white-space: nowrap
+        }
+
+        .tns-horizontal.tns-subpixel>.tns-item {
+            display: inline-block;
+            vertical-align: top;
+            white-space: normal
+        }
+
+        .tns-horizontal.tns-no-subpixel:after {
+            clear: both;
+            content: "";
+            display: table
+        }
+
+        .tns-horizontal.tns-no-subpixel>.tns-item {
+            float: left
+        }
+
+        .tns-horizontal.tns-carousel.tns-no-subpixel>.tns-item {
+            margin-right: -100%
+        }
+
+        .tns-gallery,
+        .tns-no-calc {
+            left: 0;
+            position: relative
+        }
+
+        .tns-gallery {
+            min-height: 1px
+        }
+
+        .tns-gallery>.tns-item {
+            left: -100%;
+            position: absolute;
+            transition: opacity 0s, -webkit-transform 0s;
+            transition: transform 0s, opacity 0s;
+            transition: transform 0s, opacity 0s, -webkit-transform 0s
+        }
+
+        .tns-gallery>.tns-slide-active {
+            left: auto !important;
+            position: relative
+        }
+
+        .tns-gallery>.tns-moving {
+            transition: all .25s
+        }
+
+        .tns-autowidth {
+            display: inline-block
+        }
+
+        .tns-lazy-img {
+            opacity: .6;
+            transition: opacity .6s
+        }
+
+        .tns-lazy-img.tns-complete {
+            opacity: 1
+        }
+
+        .tns-ah {
+            transition: height 0s
+        }
+
+        .tns-ovh {
+            overflow: hidden
+        }
+
+        .tns-visually-hidden {
+            left: -10000em;
+            position: absolute
+        }
+
+        .tns-transparent {
+            opacity: 0;
+            visibility: hidden
+        }
+
+        .tns-fadeIn {
+            filter: alpha(opacity=100);
+            opacity: 1;
+            z-index: 0
+        }
+
+        .tns-fadeOut,
+        .tns-normal {
+            filter: alpha(opacity=0);
+            opacity: 0;
+            z-index: -1
+        }
+
+        .tns-vpfix {
+            white-space: nowrap
+        }
+
+        .tns-vpfix>div,
+        .tns-vpfix>li {
+            display: inline-block
+        }
+
+        .tns-t-subp2 {
+            height: 10px;
+            margin: 0 auto;
+            overflow: hidden;
+            position: relative;
+            width: 310px
+        }
+
+        .tns-t-ct {
+            position: absolute;
+            right: 0;
+            width: 2333.3333333%;
+            width: 2333.33333%
+        }
+
+        .tns-t-ct:after {
+            clear: both;
+            content: "";
+            display: table
+        }
+
+        .tns-t-ct>div {
+            float: left;
+            height: 10px;
+            width: 1.4285714%;
+            width: 1.42857%
+        }
+    </style>
+    <style>
+        .tippy-tooltip[data-animation=fade][data-state=hidden] {
+            opacity: 0
+        }
+
+        .tippy-iOS {
+            -webkit-tap-highlight-color: transparent;
+            cursor: pointer !important
+        }
+
+        .tippy-popper {
+            max-width: calc(100vw - 10px);
+            pointer-events: none;
+            transition-property: transform;
+            transition-timing-function: cubic-bezier(.165, .84, .44, 1)
+        }
+
+        .tippy-tooltip {
+            background-color: #333;
+            border-radius: 4px;
+            color: #fff;
+            font-size: 14px;
+            line-height: 1.4;
+            outline: 0;
+            position: relative;
+            transition-property: visibility, opacity, transform
+        }
+
+        .tippy-tooltip[data-placement^=top]>.tippy-arrow {
+            border-top-color: #333;
+            border-width: 8px 8px 0;
+            bottom: -7px;
+            margin: 0 3px;
+            transform-origin: 50% 0
+        }
+
+        .tippy-tooltip[data-placement^=bottom]>.tippy-arrow {
+            border-bottom-color: #333;
+            border-width: 0 8px 8px;
+            margin: 0 3px;
+            top: -7px;
+            transform-origin: 50% 7px
+        }
+
+        .tippy-tooltip[data-placement^=left]>.tippy-arrow {
+            border-left-color: #333;
+            border-width: 8px 0 8px 8px;
+            margin: 3px 0;
+            right: -7px;
+            transform-origin: 0 50%
+        }
+
+        .tippy-tooltip[data-placement^=right]>.tippy-arrow {
+            border-right-color: #333;
+            border-width: 8px 8px 8px 0;
+            left: -7px;
+            margin: 3px 0;
+            transform-origin: 7px 50%
+        }
+
+        .tippy-tooltip[data-interactive][data-state=visible] {
+            pointer-events: auto
+        }
+
+        .tippy-tooltip[data-inertia][data-state=visible] {
+            transition-timing-function: cubic-bezier(.54, 1.5, .38, 1.11)
+        }
+
+        .tippy-arrow {
+            border-color: transparent;
+            border-style: solid;
+            position: absolute
+        }
+
+        .tippy-content {
+            padding: 5px 9px
+        }
+    </style>
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-234211342-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-234211342-1');
+    </script>
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N9N5L4J" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <header id="HeadMenu">
+        <div>
+            <nav class="navbar navbar-light navbar-expand-md" style="background: #d5d9db;width: 100%;height: 120px;">
+                <div class="container-fluid"><a class="navbar-brand" href="BookWeb.html"
+                        style="font-size: 60px;font-weight: bold;margin-top: 30px;color: var(--bs-dark);">WebBook</a>
+                    <div class="sidenav-icon-content">
+                        <span class="sidenav-icon_white"></span>
+                        <span class="sidenav-icon_white"></span>
+                        <span class="sidenav-icon_white"></span>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navcol-1" style="height: 70px;">
+                        <ul class="navbar-nav" style="height: 70px; margin-top: 25px;">
+                            <li class="nav-item" href="#"
+                                style="font-weight: bold;margin-top: 200px;margin-right: 10px;margin-left: 10px;width: 140px;">
+                                <a class="nav-link active" href="DanhSach.html" style="margin-top: -195px;"><span
+                                        style="font-size: 20px;margin-top: 8px;margin-right: 10px;">Danh Sách</span></a>
+                            </li>
+                            <li class="nav-item"
+                                style="font-size: 19px;margin: 0px 0px 0px 5px;margin-top: 5px;margin-right: 10px;margin-left: 10px;width: 140px;"
+                                href="Xuatban.html"><a class="nav-link" href="Xuatban.html" style="width: 140px;"><span
+                                        style="font-size: 20px;margin-top: 10px;margin-right: 10px;font-weight: bold;">Xuất
+                                        bản</span></a></li>
+                            <li class="nav-item"
+                                style="font-size: 18px;margin-top: 5px;margin-right: 10px;margin-left: 10px;width: 140px;"
+                                href="ThaoLuan.html"><a class="nav-link" href="ThaoLuan.html"
+                                    style="width: 140px;"><span
+                                        style="font-size: 20px;margin-top: 10px;margin-right: 10px;font-weight: bold;">Thảo
+                                        luận</span></a></li>
+                            <li class="nav-item"
+                                style="font-size: 19px;width: 120px;margin-top: 5px;margin-right: 10px;margin-left: 10px;"
+                                href="HuongDan.html"><a class="nav-link" href="HuongDan.html"
+                                    style="width: 140px;font-weight: bold;"><span
+                                        style="font-size: 20px;margin-top: 10px;margin-right: 10px;">Hướng
+                                        dẫn</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="navbar-mainblock">
+                        <div class="navbar-search none block-m">
+                            <form classaction="/tim-kiem" method="get"><input class="form-control search-input"
+                                    type="text" placeholder="Tối thiểu 2 kí tự" name="keywords" value=""><button
+                                    class="btn btn-primary search-submit" type="submit" value="tìm kiếm"
+                                    style="margin-top: -5px;"><i class="fas fa-search"
+                                        style="color: var(--bs-dark);width: 20px;height: 20px;"></i></button></form>
+                        </div>
+                    </div>
+                    <div id="navbar-user" class="guest"><a class="login-link" href="login.html">Đăng nhập</a>
+                        <div id="guest-menu">
+                            <div class="icon"><span class="white-point" style="font-size: 20px;"></span><span
+                                    class="white-point" style="font-size: 20px;"></span><span class="white-point"
+                                    style="font-size: 20px;"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="page-top-group">
+        <div class="index-background"></div>
+    </div>
+
+    <main id="mainpart" class="search-page">
+        <header class="page-title">
+            <div class="page-name_wrapper">
+                <div class="container">
+                    <span class="page-name"><i class="fas fa-circle"></i>Tìm kiếm</span>
+                </div>
+            </div>
+        </header>
+        <div class="search-form_wrapper">
+            <div class="container">
+                <form class="search-form clear" action="tim-kiem-nang-cao" method="get">
+                    <input class="search-form in col-8 col-md-9 col-lg-10" type="text" name="title" size="40" value="">
+                    <input id="search-go" class="search-go_form search-form submit col-4 col-md-3 col-lg-2"
+                        type="submit" value="Tìm kiếm">
+                    <div style="clear: both"></div>
+                    <span class="search-advance_toggle"><i class="fas fa-filter"></i> Tìm kiếm nâng cao</span>
+                    <div style="clear: both"></div>
+                    <div class="search-advance" style="display: block">
+                        <div class="row">
+                            <div class="col-12 col-md-8 col-lg-4" style="margin-bottom: 20px;">
+                                <div>
+                                    <div class="search-form_sub-name">Tác giả</div>
+                                    <input class="search-form search-form_sub form-control" type="text" name="author"
+                                        size="40" placeholder="Có thể bỏ trống..." value="">
+                                </div>
+                                <div>
+                                    <div class="search-form_sub-name">Họa sĩ</div>
+                                    <input class="search-form search-form_sub form-control" type="text"
+                                        name="illustrator" size="40" placeholder="Có thể bỏ trống..." value="">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 col-lg-2" style="margin-bottom: 20px;">
+                                <div class="search-status-name">Tình trạng</div>
+                                <select class="form-control" name="status">
+                                    <option value="0" selected>Tất cả</option>
+                                    <option value="1">Đang tiến hành</option>
+                                    <option value="2">Tạm ngưng</option>
+                                    <option value="3">Hoàn thành</option>
+                                </select>
+                            </div>
+                            <div class="search-gerne col-12 col-lg-6">
+                                <div class="search-gerne_name">Thể loại</div>
+                                <div class="row">
+                                    <div class="search-gerne_item include col-4 col-md-3 col-lg-4 col-xl-3">
+                                        <label class="genre_label" data-genre-id="1" }}>
+                                            <span class="gerne-icon">
+                                                <i class="far fa-square" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="gerne-name">Action</span>
+                                        </label>
+                                    </div>
+                                    <div class="search-gerne_item include col-4 col-md-3 col-lg-4 col-xl-3">
+                                        <label class="genre_label" data-genre-id="49" }}>
+                                            <span class="gerne-icon">
+                                                <i class="far fa-square" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="gerne-name">Adapted to Anime</span>
+                                        </label>
+                                    </div>
+                                    <div class="search-gerne_item include col-4 col-md-3 col-lg-4 col-xl-3">
+                                        <label class="genre_label" data-genre-id="51" }}>
+                                            <span class="gerne-icon">
+                                                <i class="far fa-square" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="gerne-name">Adapted to Drama CD</span>
+                                        </label>
+                                    </div>
+                                    <div class="search-gerne_item include col-4 col-md-3 col-lg-4 col-xl-3">
+                                        <label class="genre_label" data-genre-id="50" }}>
+                                            <span class="gerne-icon">
+                                                <i class="far fa-square" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="gerne-name">Adapted to Manga</span>
+                                        </label>
+                                    </div>
+                                    <div class="search-gerne_item include col-4 col-md-3 col-lg-4 col-xl-3">
+                                        <label class="genre_label" data-genre-id="28" }}>
+                                            <span class="gerne-icon">
+                                                <i class="far fa-square" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="gerne-name">Adult</span>
+                                        </label>
+                                    </div>
+                                    <div class="search-gerne_item include col-4 col-md-3 col-lg-4 col-xl-3">
+                                        <label class="genre_label" data-genre-id="2" }}>
+                                            <span class="gerne-icon">
+                                                <i class="far fa-square" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="gerne-name">Adventure</span>
+                                        </label>
+                                    </div>
+                                    <div class="search-gerne_item include col-4 col-md-3 col-lg-4 col-xl-3">
+                                        <label class="genre_label" data-genre-id="52" }}>
+                                            <span class="gerne-icon">
+                                                <i class="far fa-square" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="gerne-name">Age Gap</span>
+                                        </label>
+                                    </div>
+                                    <div class="search-gerne_item include col-4 col-md-3 col-lg-4 col-xl-3">
+                                        <label class="genre_label" data-genre-id="60" }}>
+                                            <span class="gerne-icon">
+                                                <i class="far fa-square" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="gerne-name">Boys Love</span>
+                                        </label>
+                                    </div>
+                                    <div class="search-gerne_item include col-4 col-md-3 col-lg-4 col-xl-3">
+                                        <label class="genre_label" data-genre-id="54" }}>
+                                            <span class="gerne-icon">
+                                                <i class="far fa-square" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="gerne-name">Character Growth</span>
+                                        </label>
+                                    </div>
+                                    <div class="search-gerne_item include col-4 col-md-3 col-lg-4 col-xl-3">
+                                        <label class="genre_label" data-genre-id="39" }}>
+                                            <span class="gerne-icon">
+                                                <i class="far fa-square" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="gerne-name">Chinese Novel</span>
+                                        </label>
+                                    </div>
+                                    <div class="search-gerne_item include col-4 col-md-3 col-lg-4 col-xl-3">
+                                        <label class="genre_label" data-genre-id="3" }}>
+                                            <span class="gerne-icon">
+                                                <i class="far fa-square" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="gerne-name">Comedy</span>
+                                        </label>
+                                    </div>
+                                    <div class="search-gerne_item include col-4 col-md-3 col-lg-4 col-xl-3">
+                                        <label class="genre_label" data-genre-id="43" }}>
+                                            <span class="gerne-icon">
+                                                <i class="far fa-square" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="gerne-name">Cooking</span>
+                                        </label>
+                                    </div>
+                                    <div class="search-gerne_item include col-4 col-md-3 col-lg-4 col-xl-3">
+                                        <label class="genre_label" data-genre-id="56" }}>
+                                            <span class="gerne-icon">
+                                                <i class="far fa-square" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="gerne-name">Different Social Status</span>
+                                        </label>
+                                    </div>
+                                    <div class="search-gerne_item include col-4 col-md-3 col-lg-4 col-xl-3">
+                                        <label class="genre_label" data-genre-id="4" }}>
+                                            <span class="gerne-icon">
+                                                <i class="far fa-square" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="gerne-name">Drama</span>
+                                        </label>
+                                    </div>
+                                    <div class="search-gerne_item include col-4 col-md-3 col-lg-4 col-xl-3">
+                                        <label class="genre_label" data-genre-id="5" }}>
+                                            <span class="gerne-icon">
+                                                <i class="far fa-square" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="gerne-name">Ecchi</span>
+                                        </label>
+                                    </div>
+                                    <div class="search-gerne_item include col-4 col-md-3 col-lg-4 col-xl-3">
+                                        <label class="genre_label" data-genre-id="40" }}>
+                                            <span class="gerne-icon">
+                                                <i class="far fa-square" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="gerne-name">English Novel</span>
+                                        </label>
+                                    </div>
+                                    <div class="search-gerne_item include col-4 col-md-3 col-lg-4 col-xl-3">
+                                        <label class="genre_label" data-genre-id="6" }}>
+                                            <span class="gerne-icon">
+                                                <i class="far fa-square" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="gerne-name">Fantasy</span>
+                                        </label>
+                                    </div>
+                                    <div class="search-gerne_item include col-4 col-md-3 col-lg-4 col-xl-3">
+                                        <label class="genre_label" data-genre-id="59" }}>
+                                            <span class="gerne-icon">
+                                                <i class="far fa-square" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="gerne-name">Female Protagonist</span>
+                                        </label>
+                                    </div>
+                                    <div class="search-gerne_item include col-4 col-md-3 col-lg-4 col-xl-3">
+                                        <label class="genre_label" data-genre-id="45" }}>
+                                            <span class="gerne-icon">
+                                                <i class="far fa-square" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="gerne-name">Game</span>
+                                        </label>
+                                    </div>
+                                    <div class="search-gerne_item include col-4 col-md-3 col-lg-4 col-xl-3">
+                                        <label class="genre_label" data-genre-id="7" }}>
+                                            <span class="gerne-icon">
+                                                <i class="far fa-square" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="gerne-name">Gender Bender</span>
+                                        </label>
+                                    </div>
+                                    <div class="search-gerne_item include col-4 col-md-3 col-lg-4 col-xl-3">
+                                        <label class="genre_label" data-genre-id="8" }}>
+                                            <span class="gerne-icon">
+                                                <i class="far fa-square" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="gerne-name">Harem</span>
+                                        </label>
+                                    </div>
+                                    <div class="search-gerne_item include col-4 col-md-3 col-lg-4 col-xl-3">
+                                        <label class="genre_label" data-genre-id="35" }}>
+                                            <span class="gerne-icon">
+                                                <i class="far fa-square" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="gerne-name">Historical</span>
+                                        </label>
+                                    </div>
+                                    <div class="search-gerne_item include col-4 col-md-3 col-lg-4 col-xl-3">
+                                        <label class="genre_label" data-genre-id="9" }}>
+                                            <span class="gerne-icon">
+                                                <i class="far fa-square" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="gerne-name">Horror</span>
+                                        </label>
+                                    </div>
+                                    <div class="search-gerne_item include col-4 col-md-3 col-lg-4 col-xl-3">
+                                        <label class="genre_label" data-genre-id="10" }}>
+                                            <span class="gerne-icon">
+                                                <i class="far fa-square" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="gerne-name">Incest</span>
+                                        </label>
+                                    </div>
+                                    <div class="search-gerne_item include col-4 col-md-3 col-lg-4 col-xl-3">
+                                        <label class="genre_label" data-genre-id="30" }}>
+                                            <span class="gerne-icon">
+                                                <i class="far fa-square" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="gerne-name">Isekai</span>
+                                        </label>
+                                    </div>
+                                    <div class="search-gerne_item include col-4 col-md-3 col-lg-4 col-xl-3">
+                                        <label class="genre_label" data-genre-id="33" }}>
+                                            <span class="gerne-icon">
+                                                <i class="far fa-square" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="gerne-name">Josei</span>
+                                        </label>
+                                    </div>
+                                    <div class="search-gerne_item include col-4 col-md-3 col-lg-4 col-xl-3">
+                                        <label class="genre_label" data-genre-id="34" }}>
+                                            <span class="gerne-icon">
+                                                <i class="far fa-square" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="gerne-name">Korean Novel</span>
+                                        </label>
+                                    </div>
+                                    <div class="search-gerne_item include col-4 col-md-3 col-lg-4 col-xl-3">
+                                        <label class="genre_label" data-genre-id="44" }}>
+                                            <span class="gerne-icon">
+                                                <i class="far fa-square" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="gerne-name">Magic</span>
+                                        </label>
+                                    </div>
+                                    <div class="search-gerne_item include col-4 col-md-3 col-lg-4 col-xl-3">
+                                        <label class="genre_label" data-genre-id="37" }}>
+                                            <span class="gerne-icon">
+                                                <i class="far fa-square" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="gerne-name">Martial Arts</span>
+                                        </label>
+                                    </div>
+                                    <div class="search-gerne_item include col-4 col-md-3 col-lg-4 col-xl-3">
+                                        <label class="genre_label" data-genre-id="27" }}>
+                                            <span class="gerne-icon">
+                                                <i class="far fa-square" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="gerne-name">Mature</span>
+                                        </label>
+                                    </div>
+                                    <div class="search-gerne_item include col-4 col-md-3 col-lg-4 col-xl-3">
+                                        <label class="genre_label" data-genre-id="11" }}>
+                                            <span class="gerne-icon">
+                                                <i class="far fa-square" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="gerne-name">Mecha</span>
+                                        </label>
+                                    </div>
+                                    <div class="search-gerne_item include col-4 col-md-3 col-lg-4 col-xl-3">
+                                        <label class="genre_label" data-genre-id="36" }}>
+                                            <span class="gerne-icon">
+                                                <i class="far fa-square" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="gerne-name">Military</span>
+                                        </label>
+                                    </div>
+                                    <div class="search-gerne_item include col-4 col-md-3 col-lg-4 col-xl-3">
+                                        <label class="genre_label" data-genre-id="58" }}>
+                                            <span class="gerne-icon">
+                                                <i class="far fa-square" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="gerne-name">Misunderstanding</span>
+                                        </label>
+                                    </div>
+                                    <div class="search-gerne_item include col-4 col-md-3 col-lg-4 col-xl-3">
+                                        <label class="genre_label" data-genre-id="12" }}>
+                                            <span class="gerne-icon">
+                                                <i class="far fa-square" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="gerne-name">Mystery</span>
+                                        </label>
+                                    </div>
+                                    <div class="search-gerne_item include col-4 col-md-3 col-lg-4 col-xl-3">
+                                        <label class="genre_label" data-genre-id="32" }}>
+                                            <span class="gerne-icon">
+                                                <i class="far fa-square" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="gerne-name">Netorare</span>
+                                        </label>
+                                    </div>
+                                    <div class="search-gerne_item include col-4 col-md-3 col-lg-4 col-xl-3">
+                                        <label class="genre_label" data-genre-id="38" }}>
+                                            <span class="gerne-icon">
+                                                <i class="far fa-square" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="gerne-name">One shot</span>
+                                        </label>
+                                    </div>
+                                    <div class="search-gerne_item include col-4 col-md-3 col-lg-4 col-xl-3">
+                                        <label class="genre_label" data-genre-id="46" }}>
+                                            <span class="gerne-icon">
+                                                <i class="far fa-square" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="gerne-name">Otome Game</span>
+                                        </label>
+                                    </div>
+                                    <div class="search-gerne_item include col-4 col-md-3 col-lg-4 col-xl-3">
+                                        <label class="genre_label" data-genre-id="23" }}>
+                                            <span class="gerne-icon">
+                                                <i class="far fa-square" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="gerne-name">Psychological</span>
+                                        </label>
+                                    </div>
+                                    <div class="search-gerne_item include col-4 col-md-3 col-lg-4 col-xl-3">
+                                        <label class="genre_label" data-genre-id="47" }}>
+                                            <span class="gerne-icon">
+                                                <i class="far fa-square" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="gerne-name">Reverse Harem</span>
+                                        </label>
+                                    </div>
+                                    <div class="search-gerne_item include col-4 col-md-3 col-lg-4 col-xl-3">
+                                        <label class="genre_label" data-genre-id="22" }}>
+                                            <span class="gerne-icon">
+                                                <i class="far fa-square" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="gerne-name">Romance</span>
+                                        </label>
+                                    </div>
+                                    <div class="search-gerne_item include col-4 col-md-3 col-lg-4 col-xl-3">
+                                        <label class="genre_label" data-genre-id="13" }}>
+                                            <span class="gerne-icon">
+                                                <i class="far fa-square" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="gerne-name">School Life</span>
+                                        </label>
+                                    </div>
+                                    <div class="search-gerne_item include col-4 col-md-3 col-lg-4 col-xl-3">
+                                        <label class="genre_label" data-genre-id="14" }}>
+                                            <span class="gerne-icon">
+                                                <i class="far fa-square" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="gerne-name">Science Fiction</span>
+                                        </label>
+                                    </div>
+                                    <div class="search-gerne_item include col-4 col-md-3 col-lg-4 col-xl-3">
+                                        <label class="genre_label" data-genre-id="31" }}>
+                                            <span class="gerne-icon">
+                                                <i class="far fa-square" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="gerne-name">Seinen</span>
+                                        </label>
+                                    </div>
+                                    <div class="search-gerne_item include col-4 col-md-3 col-lg-4 col-xl-3">
+                                        <label class="genre_label" data-genre-id="15" }}>
+                                            <span class="gerne-icon">
+                                                <i class="far fa-square" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="gerne-name">Shoujo</span>
+                                        </label>
+                                    </div>
+                                    <div class="search-gerne_item include col-4 col-md-3 col-lg-4 col-xl-3">
+                                        <label class="genre_label" data-genre-id="16" }}>
+                                            <span class="gerne-icon">
+                                                <i class="far fa-square" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="gerne-name">Shoujo ai</span>
+                                        </label>
+                                    </div>
+                                    <div class="search-gerne_item include col-4 col-md-3 col-lg-4 col-xl-3">
+                                        <label class="genre_label" data-genre-id="26" }}>
+                                            <span class="gerne-icon">
+                                                <i class="far fa-square" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="gerne-name">Shounen</span>
+                                        </label>
+                                    </div>
+                                    <div class="search-gerne_item include col-4 col-md-3 col-lg-4 col-xl-3">
+                                        <label class="genre_label" data-genre-id="17" }}>
+                                            <span class="gerne-icon">
+                                                <i class="far fa-square" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="gerne-name">Shounen ai</span>
+                                        </label>
+                                    </div>
+                                    <div class="search-gerne_item include col-4 col-md-3 col-lg-4 col-xl-3">
+                                        <label class="genre_label" data-genre-id="18" }}>
+                                            <span class="gerne-icon">
+                                                <i class="far fa-square" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="gerne-name">Slice of Life</span>
+                                        </label>
+                                    </div>
+                                    <div class="search-gerne_item include col-4 col-md-3 col-lg-4 col-xl-3">
+                                        <label class="genre_label" data-genre-id="55" }}>
+                                            <span class="gerne-icon">
+                                                <i class="far fa-square" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="gerne-name">Slow Life</span>
+                                        </label>
+                                    </div>
+                                    <div class="search-gerne_item include col-4 col-md-3 col-lg-4 col-xl-3">
+                                        <label class="genre_label" data-genre-id="19" }}>
+                                            <span class="gerne-icon">
+                                                <i class="far fa-square" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="gerne-name">Sports</span>
+                                        </label>
+                                    </div>
+                                    <div class="search-gerne_item include col-4 col-md-3 col-lg-4 col-xl-3">
+                                        <label class="genre_label" data-genre-id="24" }}>
+                                            <span class="gerne-icon">
+                                                <i class="far fa-square" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="gerne-name">Super Power</span>
+                                        </label>
+                                    </div>
+                                    <div class="search-gerne_item include col-4 col-md-3 col-lg-4 col-xl-3">
+                                        <label class="genre_label" data-genre-id="20" }}>
+                                            <span class="gerne-icon">
+                                                <i class="far fa-square" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="gerne-name">Supernatural</span>
+                                        </label>
+                                    </div>
+                                    <div class="search-gerne_item include col-4 col-md-3 col-lg-4 col-xl-3">
+                                        <label class="genre_label" data-genre-id="25" }}>
+                                            <span class="gerne-icon">
+                                                <i class="far fa-square" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="gerne-name">Suspense</span>
+                                        </label>
+                                    </div>
+                                    <div class="search-gerne_item include col-4 col-md-3 col-lg-4 col-xl-3">
+                                        <label class="genre_label" data-genre-id="21" }}>
+                                            <span class="gerne-icon">
+                                                <i class="far fa-square" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="gerne-name">Tragedy</span>
+                                        </label>
+                                    </div>
+                                    <div class="search-gerne_item include col-4 col-md-3 col-lg-4 col-xl-3">
+                                        <label class="genre_label" data-genre-id="53" }}>
+                                            <span class="gerne-icon">
+                                                <i class="far fa-square" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="gerne-name">Wars</span>
+                                        </label>
+                                    </div>
+                                    <div class="search-gerne_item include col-4 col-md-3 col-lg-4 col-xl-3">
+                                        <label class="genre_label" data-genre-id="29" }}>
+                                            <span class="gerne-icon">
+                                                <i class="far fa-square" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="gerne-name">Web Novel</span>
+                                        </label>
+                                    </div>
+                                    <div class="search-gerne_item include col-4 col-md-3 col-lg-4 col-xl-3">
+                                        <label class="genre_label" data-genre-id="57" }}>
+                                            <span class="gerne-icon">
+                                                <i class="far fa-square" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="gerne-name">Workplace</span>
+                                        </label>
+                                    </div>
+                                    <div class="search-gerne_item include col-4 col-md-3 col-lg-4 col-xl-3">
+                                        <label class="genre_label" data-genre-id="48" }}>
+                                            <span class="gerne-icon">
+                                                <i class="far fa-square" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="gerne-name">Yuri</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script>
+        // $(document).ready(function() {
+     //        $('.tooltip').tooltipster({
+     //            delay: 50,
+     //            side: 'right',
+     //            theme: 'tooltipster-borderless',
+     //            minWidth: 500,
+     //            maxWidth: 500
+     //        });
+     //    });
+    </script>
+    <script src="scripts/app.js"></script>
+    <script src="vendor/livewire/livewire.js" data-turbo-eval="false" data-turbolinks-eval="false"></script>
+    <script data-turbo-eval="false"
+        data-turbolinks-eval="false">window.livewire = new Livewire(); window.Livewire = window.livewire; window.livewire_app_url = ''; window.livewire_token = '6zzWwey1IRPv2yjA2xZsHk7elXn8bZekGYrUW4xW'; window.deferLoadingAlpine = function (callback) { window.addEventListener('livewire:load', function () { callback(); }); }; let started = false; window.addEventListener('alpine:initializing', function () { if (!started) { window.livewire.start(); started = true; } }); document.addEventListener("DOMContentLoaded", function () { if (!started) { window.livewire.start(); started = true; } });</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://pl16314303.safestcontentgate.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js"></script>
+</body>
+
+</html>

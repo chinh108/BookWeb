@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en" style="height: auto;width: 1920px;">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta property="og:image" content="img/book_open_logo.png">
+    <meta name="apple-mobile-web-app-status-bar-style" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="WBxOQBeZVEBpbcuC87TEizfDqCK9coTyDsKIGUcd">
+    <meta name="theme-color" content="#000">
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=UA-234211342-1' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-N9N5L4J');</script>
+    <!-- End Google Tag Manager -->
+    <title>Danh Sách truyện</title>
+    <link rel="canonical" href="DanhSach.html">
+    <link rel="preconnect" href="https://www.google-analytics.com">
+    <link rel="shortcut icon" href="images/book_open_logo.png">
+    <link rel="preload" href="assets/fonts/OpenSans-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="preload" href="assets/fonts/OpenSans-SemiBold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+        integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8=" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/WebInterface.css">
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script type="text/javascript" async=""
+        src="https://www.googletagmanager.com/gtag/js?id=G-96XMLJKYVT&amp;l=dataLayer&amp;cx=c"></script>
+    <script src="https://raw.githubusercontent.com/verlok/vanilla-lazyload/master/src/lazyload.js"></script>
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-234211342-1"></script>
+    <script src="scripts/plugins.js"></script>
+    <style>
+        .tns-outer {
+            padding: 0 !important
+        }
+
+        .tns-outer [hidden] {
+            display: none !important
+        }
+
+        .tns-outer [aria-controls],
+        .tns-outer [data-action] {
+            cursor: pointer
+        }
+
+        .tns-slider {
+            transition: all 0s
+        }
+
+        .tns-slider>.tns-item {
+            box-sizing: border-box
+        }
+
+        .tns-horizontal.tns-subpixel {
+            white-space: nowrap
+        }
+
+        .tns-horizontal.tns-subpixel>.tns-item {
+            display: inline-block;
+            vertical-align: top;
+            white-space: normal
+        }
+
+        .tns-horizontal.tns-no-subpixel:after {
+            clear: both;
+            content: "";
+            display: table
+        }
+
+        .tns-horizontal.tns-no-subpixel>.tns-item {
+            float: left
+        }
+
+        .tns-horizontal.tns-carousel.tns-no-subpixel>.tns-item {
+            margin-right: -100%
+        }
+
+        .tns-gallery,
+        .tns-no-calc {
+            left: 0;
+            position: relative
+        }
+
+        .tns-gallery {
+            min-height: 1px
+        }
+
+        .tns-gallery>.tns-item {
+            left: -100%;
+            position: absolute;
+            transition: opacity 0s, -webkit-transform 0s;
+            transition: transform 0s, opacity 0s;
+            transition: transform 0s, opacity 0s, -webkit-transform 0s
+        }
+
+        .tns-gallery>.tns-slide-active {
+            left: auto !important;
+            position: relative
+        }
+
+        .tns-gallery>.tns-moving {
+            transition: all .25s
+        }
+
+        .tns-autowidth {
+            display: inline-block
+        }
+
+        .tns-lazy-img {
+            opacity: .6;
+            transition: opacity .6s
+        }
+
+        .tns-lazy-img.tns-complete {
+            opacity: 1
+        }
+
+        .tns-ah {
+            transition: height 0s
+        }
+
+        .tns-ovh {
+            overflow: hidden
+        }
+
+        .tns-visually-hidden {
+            left: -10000em;
+            position: absolute
+        }
+
+        .tns-transparent {
+            opacity: 0;
+            visibility: hidden
+        }
+
+        .tns-fadeIn {
+            filter: alpha(opacity=100);
+            opacity: 1;
+            z-index: 0
+        }
+
+        .tns-fadeOut,
+        .tns-normal {
+            filter: alpha(opacity=0);
+            opacity: 0;
+            z-index: -1
+        }
+
+        .tns-vpfix {
+            white-space: nowrap
+        }
+
+        .tns-vpfix>div,
+        .tns-vpfix>li {
+            display: inline-block
+        }
+
+        .tns-t-subp2 {
+            height: 10px;
+            margin: 0 auto;
+            overflow: hidden;
+            position: relative;
+            width: 310px
+        }
+
+        .tns-t-ct {
+            position: absolute;
+            right: 0;
+            width: 2333.3333333%;
+            width: 2333.33333%
+        }
+
+        .tns-t-ct:after {
+            clear: both;
+            content: "";
+            display: table
+        }
+
+        .tns-t-ct>div {
+            float: left;
+            height: 10px;
+            width: 1.4285714%;
+            width: 1.42857%
+        }
+    </style>
+    <style>
+        .tippy-tooltip[data-animation=fade][data-state=hidden] {
+            opacity: 0
+        }
+
+        .tippy-iOS {
+            -webkit-tap-highlight-color: transparent;
+            cursor: pointer !important
+        }
+
+        .tippy-popper {
+            max-width: calc(100vw - 10px);
+            pointer-events: none;
+            transition-property: transform;
+            transition-timing-function: cubic-bezier(.165, .84, .44, 1)
+        }
+
+        .tippy-tooltip {
+            background-color: #333;
+            border-radius: 4px;
+            color: #fff;
+            font-size: 14px;
+            line-height: 1.4;
+            outline: 0;
+            position: relative;
+            transition-property: visibility, opacity, transform
+        }
+
+        .tippy-tooltip[data-placement^=top]>.tippy-arrow {
+            border-top-color: #333;
+            border-width: 8px 8px 0;
+            bottom: -7px;
+            margin: 0 3px;
+            transform-origin: 50% 0
+        }
+
+        .tippy-tooltip[data-placement^=bottom]>.tippy-arrow {
+            border-bottom-color: #333;
+            border-width: 0 8px 8px;
+            margin: 0 3px;
+            top: -7px;
+            transform-origin: 50% 7px
+        }
+
+        .tippy-tooltip[data-placement^=left]>.tippy-arrow {
+            border-left-color: #333;
+            border-width: 8px 0 8px 8px;
+            margin: 3px 0;
+            right: -7px;
+            transform-origin: 0 50%
+        }
+
+        .tippy-tooltip[data-placement^=right]>.tippy-arrow {
+            border-right-color: #333;
+            border-width: 8px 8px 8px 0;
+            left: -7px;
+            margin: 3px 0;
+            transform-origin: 7px 50%
+        }
+
+        .tippy-tooltip[data-interactive][data-state=visible] {
+            pointer-events: auto
+        }
+
+        .tippy-tooltip[data-inertia][data-state=visible] {
+            transition-timing-function: cubic-bezier(.54, 1.5, .38, 1.11)
+        }
+
+        .tippy-arrow {
+            border-color: transparent;
+            border-style: solid;
+            position: absolute
+        }
+
+        .tippy-content {
+            padding: 5px 9px
+        }
+    </style>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-234211342-1');
+    </script>
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N9N5L4J" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header id="HeadMenu">
+        <div>
+            <nav class="navbar navbar-light navbar-expand-md" style="background: #d5d9db;width: 100%;height: 120px;">
+                <div class="container-fluid"><a class="navbar-brand" href="BookWeb.html"
+                        style="font-size: 60px;font-weight: bold;margin-top: 30px;color: var(--bs-dark);">NovelWeb</a>
+                    <div class="sidenav-icon-content">
+                        <span class="sidenav-icon_white"></span>
+                        <span class="sidenav-icon_white"></span>
+                        <span class="sidenav-icon_white"></span>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navcol-1" style="height: 70px;">
+                        <ul class="navbar-nav" style="height: 70px; margin-top: 25px;">
+                            <li class="nav-item" href="Danh Sách.html"
+                                style="font-weight: bold;margin-top: 200px;margin-right: 10px;margin-left: 10px;width: 140px;">
+                                <a class="nav-link active" href="DanhSach.html" style="margin-top: -195px;"><span
+                                        style="font-size: 20px;margin-top: 8px;margin-right: 10px;">Danh Sách</span></a>
+                            </li>
+                            <li class="nav-item"
+                                style="font-size: 19px;margin: 0px 0px 0px 5px;margin-top: 5px;margin-right: 10px;margin-left: 10px;width: 140px;"
+                                href="Xuatban.html"><a class="nav-link" href="Xuatban.html" style="width: 140px;"><span
+                                        style="font-size: 20px;margin-top: 10px;margin-right: 10px;font-weight: bold;">Xuất
+                                        bản</span></a></li>
+                            <li class="nav-item"
+                                style="font-size: 18px;margin-top: 5px;margin-right: 10px;margin-left: 10px;width: 140px;"
+                                href="ThaoLuan.html"><a class="nav-link" href="ThaoLuan.html"
+                                    style="width: 140px;"><span
+                                        style="font-size: 20px;margin-top: 10px;margin-right: 10px;font-weight: bold;">Thảo
+                                        luận</span></a></li>
+                            <li class="nav-item"
+                                style="font-size: 19px;width: 120px;margin-top: 5px;margin-right: 10px;margin-left: 10px;"
+                                href="HuongDan.html"><a class="nav-link" href="HuongDan.html"
+                                    style="width: 140px;font-weight: bold;"><span
+                                        style="font-size: 20px;margin-top: 10px;margin-right: 10px;">Hướng
+                                        dẫn</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="navbar-mainblock">
+                        <div class="navbar-search none block-m">
+                            <form classaction="/Tim-kiem" method="get"><input class="form-control search-input"
+                                    type="text" placeholder="Tối thiểu 2 kí tự" name="keywords" value=""><button
+                                    class="btn btn-primary search-submit" type="submit" value="tìm kiếm"
+                                    style="margin-top: -5px;"><i class="fas fa-search"
+                                        style="color: var(--bs-dark);width: 20px;height: 20px;"></i></button></form>
+                        </div>
+                    </div>
+                    <div id="navbar-user" class="guest"><a class="login-link" href="login.html">Đăng nhập</a>
+                        <div id="guest-menu">
+                            <div class="icon"><span class="white-point" style="font-size: 20px;"></span><span
+                                    class="white-point" style="font-size: 20px;"></span><span class="white-point"
+                                    style="font-size: 20px;"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="page-top-group">
+        <div class="index-background"></div>
+    </div>
+    <form method="get">
+        <main id="mainpart" class="browser_page" style="min-height: 920px;margin-left: 20px;">
+            <div class="container" style="margin: 0 18px;padding: 0 15px;height: 60px;width: 1170px;">
+                <div class="page-breakcrumb"
+                    style="background-color: hsla(0,0%,100%,.9);border-color: #e4e5e7 #dadbdd hsla(210,4%,80%,.8);border-radius: 4px;border-style: solid;border-width: 1px;overflow: hidden;margin: 0 0 20px;padding: 4px 10px;width: 210px;">
+                    <span class="breadcrum-level"><a href="BookWeb.html"><i class="fas fa-home"></i></a></span><span
+                        class="next_icon"><i class="fas fa-chevron-right" style="margin-left: 10px;"></i></span><span
+                        class="breadcrum-level"><a href="DanhSach.html" style="margin-left: 10px;">Danh&nbsp;
+                            Sách</a></span></div>
+            </div>
+            <div class="container" style="height: auto;margin: 20px 0 30px;max-width: 1800px;">
+                <div class="row d-block clear">
+                    <div class="col-12 none d-lg-block col-lg-3 float-right filters-wrapper" style="display: block;">
+                        <div class="none-l pad-bottom-20 text-right pad-top-20"><span
+                                class="js-off-filters-wrapper button button-red"></span></div>
+                        <section class="sub-index-style">
+                            <div class="title-wrapper">
+                                <div class="section-title">
+                                    <p style="font-size: 24px;">Chữ Cái</p>
+                                </div>
+                            </div>
+                            <div class="browse-alphabet"><a class="alphabet_item current" href="Danh Sách.html">Tất
+                                    Cả</a><a class="alphabet_item" href="#">#</a><a class="alphabet_item"
+                                    href="#">a</a><a class="alphabet_item" href="#">b</a><a class="alphabet_item"
+                                    href="#">c</a><a class="alphabet_item" href="#">d</a><a class="alphabet_item"
+                                    href="#">e</a><a class="alphabet_item" href="#">f</a><a class="alphabet_item"
+                                    href="#">g</a><a class="alphabet_item" href="#">h</a><a class="alphabet_item"
+                                    href="#">i</a><a class="alphabet_item" href="#">j</a><a class="alphabet_item"
+                                    href="#">k</a><a class="alphabet_item" href="#">l</a><a class="alphabet_item"
+                                    href="#">m</a><a class="alphabet_item" href="#">n</a><a class="alphabet_item"
+                                    href="#">o</a><a class="alphabet_item" href="#">p</a><a class="alphabet_item"
+                                    href="#">q</a><a class="alphabet_item" href="#">r</a><a class="alphabet_item"
+                                    href="#">s</a><a class="alphabet_item" href="#">t</a><a class="alphabet_item"
+                                    href="#">u</a><a class="alphabet_item" href="#">v</a><a class="alphabet_item"
+                                    href="#">w</a><a class="alphabet_item" href="#">x</a><a class="alphabet_item"
+                                    href="#">y</a><a class="alphabet_item" href="#">z</a></div>
+                        </section>
+                        <section class="sub-index-style filter-section">
+                            <div class="title-wrapper">
+                                <div class="section-title">
+                                    <p style="font-size: 24px;">Phân Loại</p>
+                                </div>
+                            </div>
+                            <div class="section-content">
+                                <ul class="filter-type unstyled">
+                                    <li><input type="checkbox" name="truyendich" value="1" checked="">&nbsp; Truyện Dịch
+                                    </li>
+                                    <li><input type="checkbox" name="sangtac" value="1">&nbsp; Tự sáng tác</li>
+                                    <li><input type="checkbox" name="covert" value="1">&nbsp; Covert</li>
+                                </ul>
+                                <div class="submit-wrapper"><input class="form-control button button-primary-green"
+                                        type="submit" value="Áp Dụng"></div>
+                            </div>
+                        </section>
+                        <section class="sub-index-style filter-section">
+                            <div class="title-wrapper">
+                                <div class="section-title">
+                                    <p style="font-size: 24px;">Tình trạng</p>
+                                </div>
+                            </div>
+                            <div class="section-content">
+                                <ul class="filter-type unstyled">
+                                    <li><input type="checkbox" name="truyendich" value="1" checked="">&nbsp; Đang tiến
+                                        hành</li>
+                                    <li><input type="checkbox" name="sangtac" value="1">&nbsp; Tạm ngưng</li>
+                                    <li><input type="checkbox" name="covert" value="1">&nbsp; Đã hoàn thành</li>
+                                </ul>
+                                <div class="submit-wrapper"><input class="form-control button button-primary-green"
+                                        type="submit" value="Áp Dụng"></div>
+                            </div>
+                        </section>
+                        <section class="sub-index-style">
+                            <div class="title-wrapper">
+                                <div class="section-title">
+                                    <p style="font-size: 24px;">Chữ Cái</p>
+                                </div>
+                            </div>
+                            <div class="section-content">
+                                <ul class="filter-type unstyled clear">
+                                    <li class="filter-type_item"><a href="#">Action</a></li>
+                                    <li class="filter-type_item"><a href="#">Adapted to Anime</a></li>
+                                    <li class="filter-type_item"><a href="#">Adapted to Drama CD</a></li>
+                                    <li class="filter-type_item"><a href="#">Adapted to Manga</a></li>
+                                    <li class="filter-type_item"><a href="#">Adult</a></li>
+                                    <li class="filter-type_item"><a href="#">Adventure</a></li>
+                                    <li class="filter-type_item"><a href="#">Age Gap</a></li>
+                                    <li class="filter-type_item"><a href="#">Boys Love</a></li>
+                                    <li class="filter-type_item"><a href="#">Character Growth</a></li>
+                                    <li class="filter-type_item"><a href="#">Chinese Novel</a></li>
+                                    <li class="filter-type_item"><a href="#">Comedy</a></li>
+                                    <li class="filter-type_item"><a href="#">Cooking</a></li>
+                                    <li class="filter-type_item"><a href="#">Different Socail Status</a></li>
+                                    <li class="filter-type_item"><a href="#">Drama</a></li>
+                                    <li class="filter-type_item"><a href="#">Ecchi</a></li>
+                                    <li class="filter-type_item"><a href="#">English novel</a></li>
+                                    <li class="filter-type_item"><a href="#">Fantasy</a></li>
+                                    <li class="filter-type_item"><a href="#">Female Protagonist</a></li>
+                                    <li class="filter-type_item"><a href="#">Game</a></li>
+                                    <li class="filter-type_item"><a href="#">Gender Bender</a></li>
+                                    <li class="filter-type_item"><a href="#">Harem</a></li>
+                                    <li class="filter-type_item"><a href="#">Historical</a></li>
+                                    <li class="filter-type_item"><a href="#">Horror</a></li>
+                                    <li class="filter-type_item"><a href="#">Incest</a></li>
+                                    <li class="filter-type_item"><a href="#">Isekai</a></li>
+                                    <li class="filter-type_item"><a href="#">Josei</a></li>
+                                    <li class="filter-type_item"><a href="#">Korean Novel</a></li>
+                                    <li class="filter-type_item"><a href="#">Magic</a></li>
+                                    <li class="filter-type_item"><a href="#">Martial Arts</a></li>
+                                    <li class="filter-type_item"><a href="#">Mature</a></li>
+                                    <li class="filter-type_item"><a href="#">Mecha</a></li>
+                                    <li class="filter-type_item"><a href="#">Military</a></li>
+                                    <li class="filter-type_item"><a href="#">Misunderstanding</a></li>
+                                    <li class="filter-type_item"><a href="#">Mystery</a></li>
+                                    <li class="filter-type_item"><a href="#">Netorare</a></li>
+                                    <li class="filter-type_item"><a href="#">One shot</a></li>
+                                    <li class="filter-type_item"><a href="#">Otome Game</a></li>
+                                    <li class="filter-type_item"><a href="#">Psychological</a></li>
+                                    <li class="filter-type_item"><a href="#">Reverse Harem</a></li>
+                                    <li class="filter-type_item"><a href="#">Romance</a></li>
+                                    <li class="filter-type_item"><a href="#">School Life</a></li>
+                                    <li class="filter-type_item"><a href="#">Science Fiction</a></li>
+                                    <li class="filter-type_item"><a href="#">Seinen</a></li>
+                                    <li class="filter-type_item"><a href="#">Shoujo</a></li>
+                                    <li class="filter-type_item"><a href="#">Shoujo ai</a></li>
+                                    <li class="filter-type_item"><a href="#">Shounen</a></li>
+                                    <li class="filter-type_item"><a href="#">Shounen ai</a></li>
+                                    <li class="filter-type_item"><a href="#">Slice of Life</a></li>
+                                    <li class="filter-type_item"><a href="#">Slow Life</a></li>
+                                    <li class="filter-type_item"><a href="#">Sports</a></li>
+                                    <li class="filter-type_item"><a href="#">Super Power</a></li>
+                                    <li class="filter-type_item"><a href="#">Supernatural</a></li>
+                                    <li class="filter-type_item"><a href="#">Suspense</a></li>
+                                    <li class="filter-type_item"><a href="#">Tragedy</a></li>
+                                    <li class="filter-type_item"><a href="#">Wars</a></li>
+                                    <li class="filter-type_item"><a href="#">Web Novel</a></li>
+                                    <li class="filter-type_item"><a href="#">Worplace</a></li>
+                                    <li class="filter-type_item"><a href="#">Yuri</a></li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-12 float-left col-lg-9">
+                        <section class="thumb-section-flow">
+                            <header class="filter-container pad-bottom-10"><select class="form-select block inline-m"
+                                    name="sapxep" onchange="this.form.submit()">
+                                    <optgroup label="This is a group">
+                                        <option value="tentruyen" selected="">A - Z</option>
+                                        <option value="tentruyenZA">Z - A</option>
+                                        <option value="noibat">Nổi bật</option>
+                                        <option value="moinhat">Mới nhất</option>
+                                        <option value="Đangtienhanh">Đang Tiến hành</option>
+                                        <option value="topthang">Top Tháng</option>
+                                        <option value="toptoanthoigian">Top toàn thời gian</option>
+                                    </optgroup>
+                                </select>
+                                <div class="text-right inline-block-m right-m none-l"><span
+                                        class="button button-green js-call-filters-wrapper">Bộ Lọc<i
+                                            class="far fa-star fas fa-filter" style="margin-right: 10px;"></i></span>
+                                </div>
+                            </header>
+                            <main class="row">
+                                <div class="thumb-item-flow col-4 col-md-3 col-lg-2">
+                                    <div class="thumb-wrapper ln-tooltip" data-tooltip-content="#series_1"><a href="truyen/1-shinja-zero-no-megami-sama-to-hajimeru-isekai-kouryaku-classmate-saijaku-no-mahou-tsukai.html"
+                                            title="chương 10">
+                                            <div class="a6-ratio">
+                                                <div class="content img-in-ratio lazyloaded" data-bg="https://upload.wikimedia.org/wikipedia/vi/f/f2/Shinja_Zero_Vol_9_JP.jpg"
+                                                    style="background-image: url(https://upload.wikimedia.org/wikipedia/vi/f/f2/Shinja_Zero_Vol_9_JP.jpg);">
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="thumb-detail">
+                                            <div class="thumb_attr chapter-title" title="chương 10"><a href="truyen/1-shinja-zero-no-megami-sama-to-hajimeru-isekai-kouryaku-classmate-saijaku-no-mahou-tsukai.html" title="Chương 10">Chương 10</a>
+                                            </div>
+                                            <div class="thumb_attr volume-title">Web Novel</div>
+                                        </div>
+                                    </div>
+                                    <div class="thumb_attr series-title"><a href="truyen/1-shinja-zero-no-megami-sama-to-hajimeru-isekai-kouryaku-classmate-saijaku-no-mahou-tsukai.html" title="Shinja Zero no Megami-sama to Hajimeru Isekai Kouryaku">Shinja Zero no Megami-sama to Hajimeru Isekai Kouryaku</a></div>
+                                </div>
+                                <div style="display: none;">
+                                    <div id="series_1">
+                                        <div style="margin: 10px 0;width: 250px;">
+                                            <p style="color: white;font-weight: bold;">Shinja Zero no Megami-sama to Hajimeru Isekai Kouryaku</p>
+                                            <p></p>
+                                            <div>Số từ: 57.254</div>
+                                            <div>Lượt xem: 0</div>
+                                            <div>Lượt thích: 0</div>
+                                            <p>Makoto Takatsuki là một học sinh trung học bình thường và game thủ RPG hạng nặng. Tuy nhiên, "sự bình thường" đó bỗng nhiên biến mất khi cả lớp của cậu dính vào một vụ tai nạn xe buýt và bị dịch chuyển đến thế giới khác! Các vị thần quyền năng cai trị vùng đất kỳ lạ của ma thuật và quái vật này. Tất cả mọi người khi đến đều được ban phước với các chỉ số mạnh mẽ lẫn kỹ năng độc đáo. Chà, không hoàn toàn như vậy. Chỉ số của Makoto hóa ra rất thảm hại và kỹ năng của cậu là siêu yếu so với các bạn cùng lớp...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="thumb-item-flow col-4 col-md-3 col-lg-2">
+                                    <div class="thumb-wrapper ln-tooltip" data-tooltip-content="#series_1"><a href="#"
+                                            title="#">
+                                            <div class="a6-ratio">
+                                                <div class="content img-in-ratio lazyloaded" data-bg="#"
+                                                    style="background-image: url(&quot;#&quot;);"></div>
+                                            </div>
+                                        </a>
+                                        <div class="thumb-detail">
+                                            <div class="thumb_attr chapter-title" title="#"><a href="#" title="#"></a>
+                                            </div>
+                                            <div class="thumb_attr volume-title"></div>
+                                        </div>
+                                    </div>
+                                    <div class="thumb_attr series-title"><a href="#" title="#">#</a></div>
+                                </div>
+                                <div style="display: none;">
+                                    <div id="series_-1">
+                                        <div style="margin: 10px 0;width: 250px;">
+                                            <p style="color: white;font-weight: bold;">Paragraph</p>
+                                            <p>Paragraph</p>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <p>Paragraph</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="thumb-item-flow col-4 col-md-3 col-lg-2">
+                                    <div class="thumb-wrapper ln-tooltip" data-tooltip-content="#series_1"><a href="#"
+                                            title="#">
+                                            <div class="a6-ratio">
+                                                <div class="content img-in-ratio lazyloaded" data-bg="#"
+                                                    style="background-image: url(&quot;#&quot;);"></div>
+                                            </div>
+                                        </a>
+                                        <div class="thumb-detail">
+                                            <div class="thumb_attr chapter-title" title="#"><a href="#" title="#"></a>
+                                            </div>
+                                            <div class="thumb_attr volume-title"></div>
+                                        </div>
+                                    </div>
+                                    <div class="thumb_attr series-title"><a href="#" title="#">#</a></div>
+                                </div>
+                                <div style="display: none;">
+                                    <div id="series_-2">
+                                        <div style="margin: 10px 0;width: 250px;">
+                                            <p style="color: white;font-weight: bold;">Paragraph</p>
+                                            <p>Paragraph</p>
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                            <p>Paragraph</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </main>
+                            <div class="pagination-footer">
+                                <div class="pagination_wrap"><a class="paging_item paging_prevnext prev disabled"
+                                        href="#">Đầu</a><a class="paging_item page_num current" href="#">1</a><a
+                                        class="paging_item paging_prevnext next" href="#">Cuối</a></div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </form>
+    <script>
+        $(document).ready(function () {
+            $('.js-call-filters-wrapper').on('click', function () {
+                $('.filters-wrapper').toggle();
+                $('html').toggleClass('overflow-hiden');
+            });
+            $('.js-off-filters-wrapper').on('click', function () {
+                $('.filters-wrapper').hide();
+                $('html').removeClass('overflow-hiden');
+            });
+
+            tippy('.ln-tooltip', {
+                delay: 50,
+                maxWidth: 500,
+                interactive: false,
+                touch: ['hold', 1000],
+                placement: 'right',
+                ignoreAttributes: true,
+                content(ref) {
+                    const selector = ref.getAttribute('data-tooltip-content');
+                    const template = document.querySelector(selector);
+                    return template.innerHTML;
+                },
+                onShow(instance) {
+                    tippyHideAll({ exclude: instance });
+                }
+            });
+        });
+    </script>
+    <script src="scripts/app.js"></script>
+    <script src="vendor/livewire/livewire.js" data-turbo-eval="false" data-turbolinks-eval="false"></script>
+    <script data-turbo-eval="false"
+        data-turbolinks-eval="false">window.livewire = new Livewire(); window.Livewire = window.livewire; window.livewire_app_url = ''; window.livewire_token = '6zzWwey1IRPv2yjA2xZsHk7elXn8bZekGYrUW4xW'; window.deferLoadingAlpine = function (callback) { window.addEventListener('livewire:load', function () { callback(); }); }; let started = false; window.addEventListener('alpine:initializing', function () { if (!started) { window.livewire.start(); started = true; } }); document.addEventListener("DOMContentLoaded", function () { if (!started) { window.livewire.start(); started = true; } });</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://pl16314303.safestcontentgate.com/d5/6b/4b/d56b4bd6c3d2c1e161c4ab3c78c27670.js"></script>
+</body>
+<div style="position: absolute; top: 0px;"></div>
+
+</html>
