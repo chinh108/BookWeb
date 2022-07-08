@@ -1,15 +1,15 @@
 const path = require("path");
 const cors = require("cors");
-
 const express = require("express");
 const mongoose = require("mongoose");
 const Router = require("./routes");
-const { getCommic } = require("./utils/MainService");
+const { getCommic, getChapterData } = require("./utils/MainService");
 
 const username = "<mongodb username>";
 const password = "<password>";
 const cluster = "<cluster name>";
 const dbname = "myFirstDatabase";
+//const array = [];
 
 const app = express();
 
@@ -43,6 +43,13 @@ app.get("/login", (req, res) => {
   return res.render("login");
 });
 
+app.get("/aa", async (req, res) => {
+  const data = await getChapterData(
+    "https://docln.net/truyen/139-that-nghiep-tai-sinh/c6823-web-novel-chapter-57-ngay-em-gai-hau-nu-ra-doi"
+  );
+  res.send(data);
+});
+
 app.get("/home", (req, res) => {
   return res.render("BookWeb");
 });
@@ -53,4 +60,8 @@ app.get("/test", async (req, res) => {
     "https://docln.net/truyen/139-that-nghiep-tai-sinh"
   );
   res.send(data);
+});
+
+app.get("/", (req, res) => {
+  const book = getCommic();
 });
