@@ -10,7 +10,7 @@ function requestUrl(url) {
   });
 }
 
-function getComicData(html) {
+const getComicData = async (html) => {
   const $ = cheerio.load(html);
   const title = $($("span.series-name > a")).text();
   let tag = "";
@@ -32,12 +32,12 @@ function getComicData(html) {
     .attr("style")
     .split("'")[1];
 
-  let volume = getVolumeData($);
+  let volume = await getVolumeData($);
 
   return { title, tag, author, artist, status, sumary, thumbnail, volume };
-}
+};
 
-function getVolumeData($) {
+const getVolumeData = async ($) => {
   const volume = [];
   $("section.volume-list").each((index, e) => {
     const header = $(e).find("header");
@@ -60,7 +60,7 @@ function getVolumeData($) {
 
     const chapter = [];
     const ulList = $(rightSection).children("ul").children("li");
-    ulList.each((_index, _e) => {
+    ulList.each(async (_index, _e) => {
       let result = $(_e).children("div")[0];
       let title = $(result).children("a").text();
       let link = $(result).children("a").attr("href");
@@ -69,12 +69,45 @@ function getVolumeData($) {
 
     volume.push({ title, thumbnail, link, chapter });
   });
+
+  for (let index in volume) {
+    for (let _index in volume[index].chapter) {
+      const data = await getChapterData(
+        `https://docln.net${volume[index].chapter[_index].link}`
+      );
+      volume[index].chapter[_index] = {
+        ...volume[index].chapter[_index],
+        data,
+      };
+    }
+  }
+
   return volume;
-}
+};
+
+const getChapterData = async (link) => {
+  const html = await requestUrl(link);
+  const $ = await cheerio.load(html);
+  let data = [];
+  const content = $("div#chapter-content").find("p");
+  content.each((index, e) => {
+    let img = $(e).find("img").attr("src");
+    let text = $(e).text();
+    img && data.push(img);
+    text && data.push(text);
+  });
+
+  if (data.length === 0) {
+    console.log(link);
+    console.log(content.length);
+  }
+
+  return data;
+};
 
 const getCommic = async (url) => {
   const html = await requestUrl(url);
   return getComicData(html);
 };
 
-module.exports = { requestUrl, getCommic };
+module.exports = { requestUrl, getCommic ,getChapterData};
